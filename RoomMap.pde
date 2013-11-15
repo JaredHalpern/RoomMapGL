@@ -44,7 +44,7 @@ import processing.opengl.*;
       PVector[] depthPoints = kinect.depthMapRealWorld();
       // notice: "i+=10"
       // only draw every 10th point to make things faster
-      for (int i = 0; i < depthPoints.length; i+=15) {
+      for (int i = 0; i < depthPoints.length; i+=12) {
         PVector currentPoint = depthPoints[i];
         stroke(rgbImage.pixels[i]);
         point(currentPoint.x, currentPoint.y, currentPoint.z);
